@@ -1,0 +1,21 @@
+.container{
+    z-index: 19;
+}
+.navbar{
+    display: flex;
+    background-color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+.logo{
+    margin-right: 50px;
+}
+
+
+
+@media (max-width:992px){
+    .navbar{
+        justify-content: flex-end;
+    }
+}

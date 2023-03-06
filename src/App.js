@@ -1,25 +1,41 @@
-import logo from './logo.svg';
+import React, { useEffect , useState } from 'react';
+//style
 import './App.css';
+//components
+import BurgerMenu from './components/BurgerMenu';
+import Footer from './components/Footer';
+import Landing from './components/Landing';
+import Infobar from './components/Infobar';
+//fontawesome icons
+import './fonts/fontawesome/css/font-awesome.min.css';
 
-function App() {
+const App = () => {
+  const [scrollTop , setScrollTop] = useState(0);
+
+  useEffect(()=>{
+    document.dir = 'rtl';
+
+    const scrollHandler = ()=>{
+      setScrollTop(window.scrollY);
+    }
+
+    window.addEventListener('scroll' , scrollHandler);
+
+    return ()=>{
+      window.removeEventListener('scroll' , scrollHandler);
+    }
+  },[]);
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div>
+            <Infobar/>
+            <BurgerMenu scrollTop={scrollTop}/>
+            <Landing/>
+            {/* <Footer/> */}
+      </div>
+     
+   
   );
-}
+};
 
 export default App;

@@ -1,0 +1,42 @@
+.infobar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+.social_media{
+    display: flex;
+}
+.left_section{
+    display: flex;
+}
+.location ,
+.work_time,
+.phone_number{
+    margin-left: 80px;
+    color: #333;
+    font-size: 15px;
+    transition: all .3s;
+    font-weight: 500;
+}
+.phone_number:hover{
+    color: rgb(60, 120, 200);
+}
+.location i,
+.work_time i,
+.phone_number i{
+    margin-left: 10px;
+    color: rgb(60, 120, 200);
+    font-size: 17px;
+}
+.social_media li a{
+    margin: auto 15px;
+    font-size: 20px;
+    color: rgb(60, 120, 200);
+}
+
+@media screen and ( max-width:992px ) {
+    .container{
+        display: none;
+    }
+}

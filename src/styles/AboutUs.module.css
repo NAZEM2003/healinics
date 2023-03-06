@@ -1,0 +1,140 @@
+.about_us{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.img_container{
+    width: 45%;
+    height: 900px;
+    position: relative;
+}
+.text_container{
+    width: 55%;
+    padding: 0 20px;
+}
+.image1{
+    width: 80%;
+    height: auto;
+    object-fit: fill;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    border-radius: 8px;
+}
+.image2{
+    width: 45%;
+    height: auto;
+    object-fit: fill;
+    position: absolute;
+    top: 350px;
+    left: 250px;
+    outline: 10px solid #fff;
+    border-radius: 8px;
+}
+.about_us_text{
+    padding: 10px 0;
+    font-size: 1.3vw;
+    color: rgba(0, 0, 0, .7);
+}
+.text_container i{
+    margin-left: 10px;
+    color: #393;
+}
+.about_us_header{
+    margin-bottom: 20px;
+    font-size: 3.3vw;
+    color: #333;
+}
+.about_us_paragraph{
+    color: #333;
+    line-height: 35px;
+    text-align: justify;
+}
+.about_us_list{
+    margin-top: 25px;
+}
+.about_us_list li{
+    font-size: 1.5vw;
+    color: #333;
+    padding: 10px 0;
+}
+.about_us_button{
+    text-align: left;
+    padding: 10px 50px;
+}
+.about_us_button a{
+    padding: 15px 30px;
+    background-color: rgb(60, 120, 200);
+    color: #ccc;
+    border-radius: 16px;
+}
+
+@media screen and (max-width:992px) {
+    .image1{
+        width: 95%;
+        height: 450px;
+        top: 80px;
+    }
+    .image2{
+        width: 60%;
+        height: auto;
+        top: 480px;
+        left: 50px;
+    }
+    .about_us_text{
+        font-size: 2vw;
+    }
+    .about_us_list li{
+        font-size: 2vw;
+    }
+    .about_us_button{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .about_us{
+        flex-direction: column;
+    }
+    .img_container{
+        width: 100%;
+        height: auto;
+    }
+    .image1{
+        position: relative;
+        width: 100%;
+        left: 0;
+        top: 0;
+    }
+    .image2{
+        display: none;
+    }
+    .text_container{
+        width: 100%;
+    }
+    .about_us_text{
+        font-size: 3.5vw;
+    }
+    .about_us_header{
+        font-size: 4vw;
+        margin-top: 30px;
+    }
+    .about_us_list li{
+        font-size: 3.5vw;
+    }
+}
+
+@media screen and (max-width:544px) {
+    .about_us_button{
+        padding: 0;
+        text-align: center;
+        margin-top: 30px;
+        width: 100%;
+
+    }
+    .about_us_button a{
+        width: 100%;
+        display: inline-block;
+    }
+}

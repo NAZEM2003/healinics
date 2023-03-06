@@ -1,0 +1,35 @@
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.services_text{
+    font-size: 2vw;
+    padding: 10px;
+    line-height: 60px;
+    color: #555;
+}
+.services_text i{
+    color: rgb(60, 120, 200);
+    margin-left: 10px;
+}
+.services_title{
+    color: #444;
+    line-height: 100px;
+}
+.services_container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+@media screen and (max-width:768px){
+    .services_text{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:544px){
+    .services_title{
+        font-size: 6vw;
+    }
+}
